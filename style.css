@@ -1,0 +1,201 @@
+/* Reset some default styles and apply basic styling */
+body, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #91ff02;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+/* Add this block of code to your existing styles.css */
+
+header h1 {
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(92, 247, 3, 0.8);
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(92, 247, 3, 0.8);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(92, 247, 3, 1);, 0 0 30px rgba(92, 247, 3, 1);
+    }
+}
+
+
+.hero {
+    background-image: url("images/pexels-lukas-574070.jpg");
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* Your existing styles... */
+
+.courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.course {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course h2 {
+    margin-bottom: 10px;
+}
+
+.course-link {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.course-content ul{
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    width: 43%;
+}
+
+.course-content ul li{
+    margin: 0 10px;
+    list-style: none;
+}
+
+.course-content ul li a{
+    text-decoration: none;
+    
+    color: #fff;
+    position: relative;
+}
+
+
+
+.course-content ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #91ff02;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+.course-content ul li a:hover::after{
+    width: 100%;
+}
+
+.topic-container{
+    display:block;
+    justify-content: center;
+}
+
+.gradient-background {
+    width: 80%;
+    height: 300px;
+    background: linear-gradient(135deg, #fc00ff, #00dbde);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+
+    
+}
+
+.gradient-background p{
+  position: relative;
+  top: 50%;
+  color: #fff;
+}
+
+
+.code-box-small{
+    background-color: #030303;
+    border-radius: 10px;
+    width: 80%;
+    height: 100px;
+    margin: 10px;
+}
+
+.code-box-small p{
+    position: relative;
+    left: 30%;
+    top: 20px;
+    color: #fff;
+    font-size: larger;
+}
+
+.header{
+    background-color: #252525c9;
+    height: 20px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: x-small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
